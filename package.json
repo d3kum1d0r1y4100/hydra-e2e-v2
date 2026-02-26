@@ -1,0 +1,8 @@
+{
+  "name": "hydra-e2e-v2",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo 'test passed'",
+    "build": "echo 'build done'"
+  }
+}
