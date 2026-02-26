@@ -1,0 +1,13 @@
+name: Auto Reply
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Process comment
+        run: |
+          echo "Processing comment: ${{ github.event.comment.body }}"
+          echo "Done"
