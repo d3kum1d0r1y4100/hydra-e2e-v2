@@ -1,0 +1,15 @@
+name: Deploy Check
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Validate
+        run: ./scripts/validate.sh
